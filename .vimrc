@@ -4,7 +4,7 @@
 let mapleader = "\<Space>"
 
 " Press <leader>pv to :Ex 
-nnoremap <Leader>pv :Ex
+nnoremap <Leader>pv :Ex<cr>
 
 " Press <leader>pp to copy from systemclipboard 
 nnoremap <Leader>pp "+p
@@ -29,6 +29,10 @@ noremap <c-right> <c-w><
 " Have nerdtree ignore certain files and directories.
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
 
+" Working with tabs 
+nnoremap <Leader>t gt
+nnoremap <Leader>pt gT
+nnoremap nt :tabnew<Space>
 " }}}
 
 " STATUS LINE ------------------------------------------------------------ {{{
@@ -49,7 +53,8 @@ colorscheme desert
 " Install vim-plug plugin manager
 silent! call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-nnoremap <C-f> :FZF<CR>
+"nnoremap <C-f> :FZF<CR>
+nnoremap <Leader>pf :FZF<CR>
 call plug#end()
 
 " Workaround for system clipboard 
