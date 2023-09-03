@@ -55,4 +55,5 @@ nnoremap <Leader>p :call FromSystemClipBoard()<cr>
 " normal to visual select round and curly bracket
 nnoremap <Leader>mr vab
 nnoremap <Leader>mc vaB
+nnoremap <Leader>mt vat
 
