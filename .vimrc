@@ -40,6 +40,8 @@ function ToSystemClipBoard()
 endfunction
 vnoremap <Leader>y "ry:call ToSystemClipBoard()<cr>
 nnoremap <Leader>yy "ryy:call ToSystemClipBoard()<cr>
+nnoremap <Leader>ye "rY:call ToSystemClipBoard()<cr>
+nnoremap <Leader>yw "ryw:call ToSystemClipBoard()<cr>
 
 " Function to paste from system clipboard
 function FromSystemClipBoard()
