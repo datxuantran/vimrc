@@ -6,33 +6,10 @@ let mapleader = "\<Space>"
 " Press <leader>pv to :Ex 
 nnoremap <Leader>pv :Ex<cr>
 
-" Press <leader>pp to copy from systemclipboard 
-nnoremap <Leader>pp "+p
-
-" yank onto clipboard as well
-" vnoremap y ygv"+y
-
-" You can split the window in Vim by typing :split or :vsplit.
-" Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" Resize split windows using arrow keys by pressing:
-" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
-
-" Have nerdtree ignore certain files and directories.
-let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
-
 " Working with tabs 
-nnoremap <Leader>t gt
-nnoremap <Leader>pt gT
-nnoremap nt :tabnew<Space>
+nnoremap <Leader>tn gt
+nnoremap <Leader>tl gT
+nnoremap <Leader>tt :tabnew<cr>
 " }}}
 
 " STATUS LINE ------------------------------------------------------------ {{{
@@ -72,3 +49,8 @@ endfunction
 
 vnoremap <Leader>p :call FromSystemClipBoard()<cr>
 nnoremap <Leader>p :call FromSystemClipBoard()<cr>
+
+" normal to visual select round and curly bracket
+nnoremap <Leader>mr vab
+nnoremap <Leader>mc vaB
+
