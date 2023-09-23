@@ -27,23 +27,28 @@ set relativenumber
 colorscheme desert
 " }}}
 
+" PLUGINS ------------------------------------------------------------ {{{
 " Install vim-plug plugin manager
 silent! call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "nnoremap <C-f> :FZF<CR>
 nnoremap <Leader>pf :FZF<CR>
 call plug#end()
+" }}}
 
-" Workaround for system clipboard 
+" SYSTEM CLIPBOARD------------------------------------------------------------ {{{
+
+" Copy to system clipboard 
 function ToSystemClipBoard()
 :call system('xclip -selection c', @r)
 endfunction
+
 vnoremap <Leader>y "ry:call ToSystemClipBoard()<cr>
 nnoremap <Leader>yy "ryy:call ToSystemClipBoard()<cr>
 nnoremap <Leader>ye "rY:call ToSystemClipBoard()<cr>
 nnoremap <Leader>yw "ryw:call ToSystemClipBoard()<cr>
 
-" Function to paste from system clipboard
+" Copy from System clipboard 
 function FromSystemClipBoard()
 	let @r = system('xclip -o -selection clipboard')
 	normal! "rp
@@ -52,8 +57,10 @@ endfunction
 vnoremap <Leader>p :call FromSystemClipBoard()<cr>
 nnoremap <Leader>p :call FromSystemClipBoard()<cr>
 
-" normal to visual select round and curly bracket
-nnoremap <Leader>mr vab
+" }}}
+
+" Curly/Round Brakets Selection 
+nnoremap <Leader>mr vab 
 nnoremap <Leader>mc vaB
 nnoremap <Leader>mt vat
 
