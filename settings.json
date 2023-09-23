@@ -1,0 +1,207 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.iconTheme": "material-icon-theme",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.tabWidth": 1,
+    "prettier.useTabs": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.tokenColorCustomizations": {},
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cmake.configureOnOpen": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "vim.leader": "<space>",
+    // Normal mode
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // System register: Copy and Paste
+        {
+            "before": [
+                "<Leader>",
+                "y",
+                "y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "y",
+                "e"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "y",
+                "w"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "p",
+            ],
+            "after": [
+                "\"",
+                "+",
+                "p",
+            ]
+        },
+        {
+            "before": [
+                "<C-u>",
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "<C-d>",
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "t"
+            ],
+            "commands": [
+                ":tabnew"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "n"
+            ],
+            "commands": [
+                ":tabnext"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "commands": [
+                ":tabprev"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "c"
+            ],
+            "commands": [
+                ":tabclose"
+            ]
+        },
+        // Split window horizontally
+        {
+            "before": [
+                "<C-w>",
+                "-"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
+        // Split window vertically
+        {
+            "before": [
+                "<C-w>",
+                "\\"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+    ],
+    // Visual Mode
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Leader>",
+                "y",
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y",
+            ]
+        },
+    ],
+    "window.zoomLevel": -1,
+    "editor.largeFileOptimizations": true,
+    "editor.lineNumbers": "relative"
+}

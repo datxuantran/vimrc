@@ -24,15 +24,16 @@ set tabstop=4
 set relativenumber
 
 " Set the colorscheme
-colorscheme desert
+" colorscheme desert
 " }}}
 
 " PLUGINS ------------------------------------------------------------ {{{
 " Install vim-plug plugin manager
 silent! call plug#begin('~/.vim/plugged')
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"nnoremap <C-f> :FZF<CR>
 nnoremap <Leader>pf :FZF<CR>
+
 call plug#end()
 " }}}
 
@@ -64,3 +65,48 @@ nnoremap <Leader>mr vab
 nnoremap <Leader>mc vaB
 nnoremap <Leader>mt vat
 
+
+" WINDOWS------------------------------------------------------------ {{{
+
+" Split window horizontally
+nnoremap <leader>w- :split<CR>
+
+" Split window vertically
+nnoremap <leader>w\ :vsplit<CR>
+
+" Switch between windows
+nnoremap <leader>ww <C-w>w
+
+" Quit the current window
+nnoremap <leader>wq :q<CR>
+
+" Exchange the current window with the next one
+nnoremap <leader>wx <C-w>x
+
+" Make all windows equal height and width
+nnoremap <leader>w= <C-w>=
+
+" Move cursor to the left window (vertical split)
+nnoremap <leader>wh <C-w>h
+
+" Move cursor to the right window (vertical split)
+nnoremap <leader>wl <C-w>l
+
+" Move cursor to the window below (horizontal split)
+nnoremap <leader>wj <C-w>j
+
+" Move cursor to the window above (horizontal split)
+nnoremap <leader>wk <C-w>k
+
+" Make current window full height at far left (leftmost vertical window)
+nnoremap <leader>wH :topleft vertical resize +100<CR>
+
+" Make current window full height at far right (rightmost vertical window)
+nnoremap <leader>wL :botright vertical resize +100<CR>
+
+" Make current window full width at the very bottom (bottommost horizontal window)
+nnoremap <leader>wJ :botright resize +100<CR>
+
+" Make current window full width at the very top (topmost horizontal window)
+nnoremap <leader>wK :topleft resize +100<CR>
+" }}}
