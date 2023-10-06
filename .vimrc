@@ -61,13 +61,13 @@ nnoremap <Leader>p :call FromSystemClipBoard()<cr>
 " }}}
 
 " Curly/Round Brakets Selection 
-nnoremap mar vab 
-nnoremap mac vaB
-nnoremap mat vat
+nnoremap var vab 
+nnoremap vac vaB
+nnoremap vat vat
 
-nnoremap mir vib 
-nnoremap mic viB
-nnoremap mit vit
+nnoremap vir vib 
+nnoremap vic viB
+nnoremap vit vit
 
 
 " WINDOWS------------------------------------------------------------ {{{
