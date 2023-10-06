@@ -7,9 +7,9 @@ let mapleader = "\<Space>"
 nnoremap <Leader>pv :Ex<cr>
 
 " Working with tabs 
-nnoremap <Leader>tn gt
-nnoremap <Leader>tl gT
-nnoremap <Leader>tt :tabnew<cr>
+nnoremap tn gt
+nnoremap tl gT
+nnoremap tt :tabnew<cr>
 " }}}
 
 " STATUS LINE ------------------------------------------------------------ {{{
@@ -61,9 +61,13 @@ nnoremap <Leader>p :call FromSystemClipBoard()<cr>
 " }}}
 
 " Curly/Round Brakets Selection 
-nnoremap <Leader>mr vab 
-nnoremap <Leader>mc vaB
-nnoremap <Leader>mt vat
+nnoremap mar vab 
+nnoremap mac vaB
+nnoremap mat vat
+
+nnoremap mir vib 
+nnoremap mic viB
+nnoremap mit vit
 
 
 " WINDOWS------------------------------------------------------------ {{{
